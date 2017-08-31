@@ -19,8 +19,9 @@ export default ({ children, title = 'Justin Dopierala' }) => {
     //background: '#F1F1F1',
     minHeight: '100%',
     fontFamily:
-      'system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif',
-    fontSize: '16px',
+      '"Roboto", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif',
+    fontSize: '10px',
+    fontWeight: 300,
     lineHeight: 1,
   });
 
