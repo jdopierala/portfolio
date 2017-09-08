@@ -14,6 +14,10 @@ if (typeof window !== 'undefined') {
 }
 
 export default ({ children, title = 'Justin Dopierala' }) => {
+  css.global('*', {
+    boxSizing: 'border-box',
+  });
+
   css.global('html, body', {
     background: '#F4F4F8',
     //background: '#F1F1F1',
@@ -25,6 +29,11 @@ export default ({ children, title = 'Justin Dopierala' }) => {
     lineHeight: 1,
   });
 
+  css.global('body', {
+    display: 'flex',
+    justifyContent: 'center',
+  });
+
   css.global('a', {
     textDecoration: 'none',
     color: 'inherit',
@@ -34,7 +43,7 @@ export default ({ children, title = 'Justin Dopierala' }) => {
   });
 
   const Wrapper = glamorous.div({
-    margin: '0 auto',
+    // margin: '0 auto',
     maxWidth: '320px',
   });
 

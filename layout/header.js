@@ -19,16 +19,16 @@ export default () => {
     border: '1px dashed #000',
     //borderRadius: '1px',
     backgroundColor: '#FED766',
-    margin: '10px 0',
+    margin: '2vh 0',
     padding: '10px',
     width: '300px',
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
   });
 
   const NavLink = glamorous.div({
     textDecoration: 'none',
-    margin: '0 10px',
+    margin: '0',
     fontSize: '1.25rem',
     fontWeight: 500,
   });

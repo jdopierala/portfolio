@@ -20,7 +20,7 @@ export default () => {
 
       <p>Justin.</p>
 
-      <p>A web developer in training.</p>
+      <p>Web developer in training.</p>
 
       <p>From Melbourne, Australia.</p>
 
