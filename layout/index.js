@@ -19,10 +19,27 @@ export default ({ children, title = 'Justin Dopierala' }) => {
     //background: '#F1F1F1',
     minHeight: '100%',
     fontFamily:
-      '"Roboto", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif',
+      '"Libre Franklin", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif',
     fontSize: '10px',
     fontWeight: 300,
     lineHeight: 1,
+  });
+
+  css.global('a', {
+    textDecoration: 'none',
+    color: 'inherit',
+    ':visited': {
+      color: 'inherit',
+    },
+  });
+
+  const Wrapper = glamorous.div({
+    margin: '0 auto',
+    maxWidth: '320px',
+  });
+
+  const Container = glamorous.div({
+    margin: '0',
   });
 
   return (
@@ -40,10 +57,11 @@ export default ({ children, title = 'Justin Dopierala' }) => {
           content="web developer in training - learning, yearning, ... concerning"
         />
       </Head>
-
-      <Header />
-      {children}
-      <Footer />
+      <Wrapper>
+        <Header />
+        <Container>{children}</Container>
+        <Footer />
+      </Wrapper>
     </div>
   );
 };
